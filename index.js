@@ -11,7 +11,9 @@
  * getCohort({cohort: 3476, name: "Charlie"}); // 3476
  */
 export function getCohort(student) {
-  // TODO
+  // i need to receive a cohort, and to receive a name
+  return student.cohort;
+  // i need to return the cohort
 }
 
 /**
@@ -30,7 +32,20 @@ export function getCohort(student) {
  * sortStudents({cohort: 1, name: "Alice"}, {cohort: 2, name: "Alice"}); // {cohort: 1, name: "Alice"}
  */
 export function sortStudents(studentA, studentB) {
-  // TODO
+  // i will receive two objects, each with  a number and string.
+  // const sortNames = name.studentA.AcompareTo(name.studentB);
+  // if (sortNames < 0) {
+  //   return studentB;
+  // } else if (sortNames > 0) {
+  //   return studentA;
+  // }
+  // return studentA;
+  // i will return the name that comes alphabetically first, which means
+  // sorting the names i guess?
+  if (studentA.name < studentB.name || studentA.name === studentB.name) {
+    return studentA;
+  }
+  return studentB;
 }
 
 /**
@@ -47,7 +62,11 @@ export function sortStudents(studentA, studentB) {
  * makeFlag("yellow", "triangle"); // { color: "yellow", icon: "triangle" }
  */
 export function makeFlag(color, icon) {
-  // TODO
+  const flag = {
+    color: color,
+    icon: icon,
+  };
+  return flag;
 }
 
 /**
